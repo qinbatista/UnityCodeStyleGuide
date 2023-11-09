@@ -10,7 +10,7 @@ public class GameManager : Singleton<GameManager>
     
     private int _maxHealth;
     // read-only, returns backing field,equivalent to:public int MaxHealth { get; private set; }
-    public int MaxHealth => maxHealth;
+    public int MaxHealth => _maxHealth;
 
     void SaveInstanceData(int objectIndex)
     {
