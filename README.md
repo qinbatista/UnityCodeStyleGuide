@@ -8,7 +8,7 @@ public class GameManager : Singleton<GameManager>
     public event Action<int> EventPointsScored;
     public Transform LandTransform { get => _landTransform; }
     
-    private int maxHealth;
+    private int _maxHealth;
     // read-only, returns backing field,equivalent to:public int MaxHealth { get; private set; }
     public int MaxHealth => maxHealth;
 
